@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;500&display=swap');
+
+* {
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+  background-color: rgb(145, 70, 255);
+}
+
+.head-row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 12px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+  color: rgb(255, 255, 255);
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.row {
+  display: none;
+}
+
+img {
+  flex: 0 0 auto;
+}
+
+button {
+  background-size: 100%;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+  text-decoration: none;
+}
+
+.menu-item {
+  color: rgb(255, 255, 255);
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  gap: 20px;
+}
+
+a:visited{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+#builtwith {
+  color: rgb(255, 255, 255);
+  font-family: 'Inter Tight', sans-serif;
+  font-style: italic;
+  font-size: 12px;
+}
