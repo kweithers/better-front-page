@@ -10,7 +10,7 @@ async function getStreamers(n, id) {
   });
   const json = await response.json();
   const streamers = json.data.map(element => element.user_id);
-  const names = json.data.map(element => element.user_name);
+  const names = json.data.map(element => element.user_login);
 
   let returns = [];
   for (let i = 0; i < streamers.length; i++) {
@@ -32,7 +32,7 @@ async function getStreamersAllCategories(n) {
   });
   const json = await response.json();
   const streamers = json.data.map(element => element.user_id);
-  const names = json.data.map(element => element.user_name);
+  const names = json.data.map(element => element.user_login);
 
   let returns = [];
   for (let i = 0; i < streamers.length; i++) {

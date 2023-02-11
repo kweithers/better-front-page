@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;500&display=swap');
 
 * {
-  overflow-x: hidden;
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: clip;
   background-color: rgb(145, 70, 255);
@@ -32,8 +32,12 @@ footer {
 }
 
 .row {
-  display: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  flex-shrink: 0;
 }
+
 
 img {
   flex: 0 0 auto;
@@ -60,7 +64,7 @@ button {
   gap: 20px;
 }
 
-a:visited{
+a:visited {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
