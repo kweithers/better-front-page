@@ -1,4 +1,4 @@
-export function createMap() {
+export function createEmoteUrlMap() {
   let m = new Map();
   m.set("catJAM", "https://cdn.betterttv.net/emote/5f1b0186cf6d2144653d2970/2x");
   m.set("monkaS", "https://cdn.betterttv.net/emote/56e9f494fff3cc5c35e5287e/2x");

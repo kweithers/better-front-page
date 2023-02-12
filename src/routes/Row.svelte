@@ -18,7 +18,11 @@
       {viewer_count}
     </div>
   </div>
-  <a href="https://twitch.tv/{user_name}" target="_blank" rel="noopener noreferrer">
+  <a
+    href="https://twitch.tv/{user_name}"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <img
       title={user_name}
       src={image_url}

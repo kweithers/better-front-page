@@ -1,6 +1,6 @@
 async function getStreamers(n, id) {
   const url = 'https://api.twitch.tv/helix/streams?first=' + n + '&game_id=' + id;
-  
+
   const response = await fetch(url, {
     method: 'GET',
     headers: {
@@ -23,7 +23,7 @@ async function getStreamers(n, id) {
 
 async function getStreamersAllCategories(n) {
   const url = 'https://api.twitch.tv/helix/streams?first=' + n
-  
+
   const response = await fetch(url, {
     method: 'GET',
     headers: {
@@ -54,7 +54,6 @@ async function getImageURL(id) {
     },
   });
   const json = await response.json();
-  // console.log(json);
   const image_url = json.data[0].profile_image_url;
   return image_url;
 }
