@@ -18,3 +18,7 @@
 </div>
 
 <slot />
+
+<footer>
+    This is a hobby project that is in no way affiliated with Twitch.
+</footer>

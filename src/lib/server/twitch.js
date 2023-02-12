@@ -11,10 +11,11 @@ async function getStreamers(n, id) {
   const json = await response.json();
   const streamers = json.data.map(element => element.user_id);
   const names = json.data.map(element => element.user_login);
+  const viewers = json.data.map(element => element.viewer_count);
 
   let returns = [];
   for (let i = 0; i < streamers.length; i++) {
-    returns.push({ user_id: streamers[i], user_name: names[i] })
+    returns.push({ user_id: streamers[i], user_name: names[i], viewer_count: viewers[i] })
   }
 
   return returns
@@ -33,10 +34,11 @@ async function getStreamersAllCategories(n) {
   const json = await response.json();
   const streamers = json.data.map(element => element.user_id);
   const names = json.data.map(element => element.user_login);
+  const viewers = json.data.map(element => element.viewer_count);
 
   let returns = [];
   for (let i = 0; i < streamers.length; i++) {
-    returns.push({ user_id: streamers[i], user_name: names[i] })
+    returns.push({ user_id: streamers[i], user_name: names[i], viewer_count: viewers[i] })
   }
 
   return returns
@@ -61,15 +63,17 @@ export async function getStreams(n, id) {
   let streamers = await getStreamers(n, id);
   let user_ids = []
   let user_names = []
+  let viewers = []
   for (let i = 0; i < streamers.length; i++) {
     user_ids.push(streamers[i].user_id);
     user_names.push(streamers[i].user_name);
+    viewers.push(streamers[i].viewer_count)
   }
   let urls = await Promise.all(user_ids.map(getImageURL));
 
   let streams = [];
   for (let i = 0; i < streamers.length; i++) {
-    streams.push({ user_id: user_ids[i], user_name: user_names[i], url: urls[i] })
+    streams.push({ user_id: user_ids[i], user_name: user_names[i], url: urls[i], viewer_count: viewers[i] })
   }
 
   return streams
@@ -79,15 +83,17 @@ export async function getStreamsAllCategories(n) {
   let streamers = await getStreamersAllCategories(n);
   let user_ids = []
   let user_names = []
+  let viewers = []
   for (let i = 0; i < streamers.length; i++) {
     user_ids.push(streamers[i].user_id);
     user_names.push(streamers[i].user_name);
+    viewers.push(streamers[i].viewer_count)
   }
   let urls = await Promise.all(user_ids.map(getImageURL));
 
   let streams = [];
   for (let i = 0; i < streamers.length; i++) {
-    streams.push({ user_id: user_ids[i], user_name: user_names[i], url: urls[i] })
+    streams.push({ user_id: user_ids[i], user_name: user_names[i], url: urls[i], viewer_count: viewers[i] })
   }
 
   return streams

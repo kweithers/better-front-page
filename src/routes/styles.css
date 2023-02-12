@@ -21,10 +21,9 @@ body {
 }
 
 footer {
-  margin-top: auto;
   color: rgb(255, 255, 255);
   font-family: 'Inter Tight', sans-serif;
-  font-weight: bold;
+  font-style: italic;
   font-size: 12px;
   display: flex;
   flex-flow: row nowrap;
@@ -38,13 +37,10 @@ footer {
   flex-shrink: 0;
 }
 
-
-img {
+img,
+a,
+p {
   flex: 0 0 auto;
-}
-
-button {
-  background-size: 100%;
 }
 
 .title {
@@ -62,16 +58,4 @@ button {
   font-size: 12px;
   text-decoration: none;
   gap: 20px;
-}
-
-a:visited {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-#builtwith {
-  color: rgb(255, 255, 255);
-  font-family: 'Inter Tight', sans-serif;
-  font-style: italic;
-  font-size: 12px;
 }

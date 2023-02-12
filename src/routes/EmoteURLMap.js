@@ -400,5 +400,6 @@ export function createMap() {
   m.set("clubPls", "https:cdn.betterttv.net/emote/5723e5f2ece3853a0adb03d2/2x");
   m.set("CatBlush", "https:cdn.betterttv.net/emote/5e052a618608fb0da4122b70/2x");
   m.set("Pepego", "https:cdn.betterttv.net/emote/5c85dd4b2bc49a0419824494/2x");
-  m.set("MusicMakeYouLoseControl", "https:cdn.betterttv.net/emote/5e77ed63d112fc372574e07e/2x");return m;
+  m.set("MusicMakeYouLoseControl", "https:cdn.betterttv.net/emote/5e77ed63d112fc372574e07e/2x");
+  return m;
 }
