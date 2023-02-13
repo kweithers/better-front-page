@@ -34,6 +34,9 @@
         }
       }
     });
+
+    return () => {client.disconnect();}
+
   });
 </script>
 

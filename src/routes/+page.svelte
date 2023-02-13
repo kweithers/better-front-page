@@ -2,7 +2,7 @@
   /** @type {import('./$types').PageData} */ export let data;
   import Row from "./Row.svelte";
   import { Client } from "tmi.js";
-  import { onMount } from "svelte";
+  import { onMount, onDestroy } from "svelte";
 
   let m = data.emoteUrlMap;
 
@@ -16,7 +16,7 @@
   });
 
   client.connect();
-
+  
   onMount(() => {
     client.on("message", (channel, tags, message, self) => {
       let channel_parsed = channel.replace("#", "");
@@ -32,6 +32,9 @@
         }
       }
     });
+
+    return () => {client.disconnect();}
+
   });
 </script>
 
