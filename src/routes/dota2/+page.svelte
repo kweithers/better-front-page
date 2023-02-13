@@ -15,6 +15,9 @@
   }
   const client = new Client({
     channels: streams,
+    options: {
+      joinInterval: 300
+    }
   });
 
   client.connect();
@@ -35,8 +38,9 @@
       }
     });
 
-    return () => {client.disconnect();}
-
+    return () => {
+      client.disconnect();
+    };
   });
 </script>
 

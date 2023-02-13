@@ -13,10 +13,13 @@
 
   const client = new Client({
     channels: streams,
+    options: {
+      joinInterval: 300,
+    },
   });
 
   client.connect();
-  
+
   onMount(() => {
     client.on("message", (channel, tags, message, self) => {
       let channel_parsed = channel.replace("#", "");
@@ -33,8 +36,9 @@
       }
     });
 
-    return () => {client.disconnect();}
-
+    return () => {
+      client.disconnect();
+    };
   });
 </script>
 
