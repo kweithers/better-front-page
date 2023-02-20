@@ -15,6 +15,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@vercel/analytics": "^0.1.10",
 		"tmi.js": "^1.8.5"
 	}
 }

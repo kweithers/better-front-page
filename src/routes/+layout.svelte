@@ -1,7 +1,11 @@
 <script>
     import "./styles.css";
+    import { dev } from "$app/environment";
+    import { inject } from "@vercel/analytics";
     /** @type {import('./$types').LayoutData} */ export let data;
     let current = "";
+
+    inject({ mode: dev ? "development" : "production" });
 </script>
 
 <div class="head-head">
