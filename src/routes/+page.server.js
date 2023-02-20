@@ -1,5 +1,5 @@
 import { getStreamsAllCategories } from "$lib/server/twitch.js"
-import { createEmoteUrlMap } from "$lib/server/emote-url-map.js";
+import { createEmoteUrlMap } from "$lib/emote-url-map.js";
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {
