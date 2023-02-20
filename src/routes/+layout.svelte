@@ -27,7 +27,7 @@
         <a
             class="menu-item"
             id="login"
-            href="https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=inzsbvgt26ismaczn8ndeq8lq6gueh&redirect_uri=http://localhost:5173/custom&scope=user%3Aread%3Afollows"
+            href="https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=inzsbvgt26ismaczn8ndeq8lq6gueh&redirect_uri=https://kekw-pro.vercel.app/custom&scope=user%3Aread%3Afollows"
             >Login with Twitch to see your followed streamers</a
         >
     </div>
