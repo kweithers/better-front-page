@@ -148,7 +148,7 @@ export function createEmoteUrlMap() {
   m.set("PETTHEVIPS", "https://cdn.7tv.app/emote/60afa9e860e24df01aee7be2/2x.webp");
   m.set("SALAMI", "https://cdn.7tv.app/emote/63557710ea3edc5b96ecc142/2x.webp");
   m.set("pepeDS", "https://cdn.7tv.app/emote/60a3050fac2bcb20ef20fd9a/2x.webp");
-  m.set("ok", "https://cdn.7tv.app/emote/6268904f4f54759b7184fa72/2x.webp");
+  // m.set("ok", "https://cdn.7tv.app/emote/6268904f4f54759b7184fa72/2x.webp");
   m.set("PepegaChat", "https://cdn.7tv.app/emote/6147bb2045d00846a86ebd47/2x.webp");
   m.set("Sadeg", "https://cdn.7tv.app/emote/605304ed8c870a000de38b6d/2x.webp");
   m.set("Thinking", "https://cdn.7tv.app/emote/603e9f57284626000d068870/2x.webp");
@@ -1380,7 +1380,7 @@ export function createEmoteUrlMap() {
   m.set("xqcL", "https://cdn.7tv.app/emote/60527bb28c870a000de38b55/2x.webp");
   m.set("whotBass", "https://cdn.7tv.app/emote/60afbbc860e24df01a543c5e/2x.webp");
   m.set("GOTTEM", "https://cdn.7tv.app/emote/60b0c3ac7ec2882b3ddc268c/2x.webp");
-  m.set("wow", "https://cdn.7tv.app/emote/625165f12667140c8ceddc18/2x.webp");
+  // m.set("wow", "https://cdn.7tv.app/emote/625165f12667140c8ceddc18/2x.webp");
   m.set("PepePls", "https://cdn.7tv.app/emote/60ef012091fa1c80cb0a6cc0/2x.webp");
   m.set("Rainge", "https://cdn.7tv.app/emote/60aeafa0229664e866bc7590/2x.webp");
   m.set("docSmash", "https://cdn.7tv.app/emote/60b79884f09ea88072653d4b/2x.webp");

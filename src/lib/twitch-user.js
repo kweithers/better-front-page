@@ -7,11 +7,8 @@ async function getUserId(access_token) {
       "Client-Id": "inzsbvgt26ismaczn8ndeq8lq6gueh",
     },
   });
-  await console.log(response);
   const json = await response.json();
-  console.log(json);
   const user_id = await json.data[0].id;
-  await console.log(user_id);
   return user_id;
 }
 
