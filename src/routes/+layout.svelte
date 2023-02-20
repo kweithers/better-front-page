@@ -7,7 +7,10 @@
 <div class="head-head">
     <div class="head-row">
         <a on:click={() => (current = "")} href="/" class="title">KEKW.pro</a>
-        <a href="https://www.youtube.com/watch?v=WDiB4rtp1qw&t=41s"
+        <a
+            href="https://www.youtube.com/watch?v=WDiB4rtp1qw"
+            target="_blank"
+            rel="noopener noreferrer"
             ><img
                 src="https://cdn.betterttv.net/emote/5e9c6c187e090362f8b0b9e8/2x"
                 alt="risitas"
