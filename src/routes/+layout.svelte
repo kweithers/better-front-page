@@ -31,12 +31,16 @@
         {/each}
     </div>
     <div class="head-login">
+        {#if data.pathname == "custom"}
+        <p class="menu-item" id="custom">Thank you for authenticating. Enjoy!</p>
+        {:else}
         <a
             class="menu-item"
             id="login"
             href="https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=inzsbvgt26ismaczn8ndeq8lq6gueh&redirect_uri=https://kekw-pro.vercel.app/custom&scope=user%3Aread%3Afollows"
-            >Login with Twitch to see your followed streamers</a
+            >Authenticate with Twitch to see your followed streamers</a
         >
+        {/if}
     </div>
 </div>
 
@@ -53,6 +57,8 @@
     #login {
         font-style: italic;
         text-decoration: underline;
-        float: right;
+    }
+    #custom {
+        font-style: italic;
     }
 </style>
