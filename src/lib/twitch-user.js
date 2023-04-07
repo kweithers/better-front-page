@@ -1,5 +1,3 @@
-import { APP_ACCESS_TOKEN } from '$env/static/private'
-
 async function getUserId(access_token) {
   const url = "https://api.twitch.tv/helix/users";
   const response = await fetch(url, {
@@ -43,7 +41,7 @@ async function getImageURL(id) {
   const response = await fetch(url, {
     method: "GET",
     headers: {
-      Authorization: " Bearer " + APP_ACCESS_TOKEN,
+      Authorization: " Bearer " + access_token,
       "Client-Id": "inzsbvgt26ismaczn8ndeq8lq6gueh",
     },
   });
