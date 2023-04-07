@@ -497,7 +497,7 @@ export function createEmoteUrlMap() {
   m.set("elmoFire", "https://cdn.7tv.app/emote/60b899f34453adf5ae64a2f1/2x.webp");
   m.set("WeirdCat", "https://cdn.7tv.app/emote/60baa2643f56f4a8235d971c/2x.webp");
   m.set("poroPls", "https://cdn.7tv.app/emote/61e45c661f8f9d5cf633601f/2x.webp");
-  m.set("THESE", "https://cdn.7tv.app/emote/634f24e73f0e02e10e056599/2x.webp");
+  // m.set("THESE", "https://cdn.7tv.app/emote/634f24e73f0e02e10e056599/2x.webp");
   m.set("WakuWaku", "https://cdn.7tv.app/emote/625a493684665eec7674d17e/2x.webp");
   m.set("Streaming", "https://cdn.7tv.app/emote/61f5a7454f8c353cf9fbde43/2x.webp");
   m.set("BOTTING", "https://cdn.7tv.app/emote/609ef3684c18609a1d9a615d/2x.webp");
@@ -712,7 +712,7 @@ export function createEmoteUrlMap() {
   m.set("PogOff", "https://cdn.7tv.app/emote/60c643f36d02b2dce70692b9/2x.webp");
   m.set("BONK", "https://cdn.7tv.app/emote/61edccfe1a1b2a6e7325284d/2x.webp");
   m.set("FlushedCat", "https://cdn.7tv.app/emote/60aee0647e8706b5723f20ad/2x.webp");
-  m.set("THOSE", "https://cdn.7tv.app/emote/613c66c02d7724a96175c07d/2x.webp");
+  // m.set("THOSE", "https://cdn.7tv.app/emote/613c66c02d7724a96175c07d/2x.webp");
   m.set("dogeDance", "https://cdn.7tv.app/emote/60b89962f09ea88072c322e6/2x.webp");
   m.set("HmmmOK", "https://cdn.7tv.app/emote/60d31edf91b6751bc1620e0c/2x.webp");
   m.set("marinHey", "https://cdn.7tv.app/emote/61e71e131f8f9d5cf633c9a1/2x.webp");
@@ -1066,7 +1066,7 @@ export function createEmoteUrlMap() {
   m.set("ChugU", "https://cdn.7tv.app/emote/60ae378eaee2aa553807e9d3/2x.webp");
   m.set("Me:", "https://cdn.7tv.app/emote/631b2a7c49c37251451656d9/2x.webp");
   m.set("pepeZ", "https://cdn.7tv.app/emote/60ae6c87117ec68ca45ea6e0/2x.webp");
-  m.set("sex", "https://cdn.7tv.app/emote/611d56f3c4ce2e7c3c3a1261/2x.webp");
+  // m.set("sex", "https://cdn.7tv.app/emote/611d56f3c4ce2e7c3c3a1261/2x.webp");
   m.set("forsenBased", "https://cdn.7tv.app/emote/603cb3c4c20d020014423c46/2x.webp");
   m.set("FuckingYourMom", "https://cdn.7tv.app/emote/6042521e77137b000de9e6ae/2x.webp");
   m.set("Dadada", "https://cdn.7tv.app/emote/60fd59123acb2bea43121c64/2x.webp");
