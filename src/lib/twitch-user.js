@@ -36,7 +36,7 @@ async function getStreamersForUser(access_token) {
   return returns
 }
 
-async function getImageURL(id) {
+async function getImageURL(id, access_token) {
   const url = "https://api.twitch.tv/helix/users?id=" + id;
   const response = await fetch(url, {
     method: "GET",
@@ -58,14 +58,14 @@ export async function getStreamsForUser(access_token) {
   for (let i = 0; i < streamers.length; i++) {
     user_ids.push(streamers[i].user_id);
     user_names.push(streamers[i].user_name);
-    viewers.push(streamers[i].viewer_count)
+    viewers.push(streamers[i].viewer_count);
   }
-  let urls = await Promise.all(user_ids.map(getImageURL));
+
+  let urls = await Promise.all(user_ids.map(function (x) { return getImageURL(x, access_token); }));
 
   let streams = [];
   for (let i = 0; i < streamers.length; i++) {
     streams.push({ user_id: user_ids[i], user_name: user_names[i], url: urls[i], viewer_count: viewers[i] })
   }
-
   return streams
 }
