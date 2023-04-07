@@ -41,7 +41,7 @@ async function getImageURL(id) {
   const response = await fetch(url, {
     method: "GET",
     headers: {
-      Authorization: " Bearer wwp757jqfzr50pd3kqkek7g7lmfwsj",
+      Authorization: " Bearer o7swquln6lilbzbl42tm4nnp7f223k",
       "Client-Id": "inzsbvgt26ismaczn8ndeq8lq6gueh",
     },
   });
