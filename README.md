@@ -1,7 +1,11 @@
 # KEKW.pro ![](https://cdn.betterttv.net/emote/5e9c6c187e090362f8b0b9e8/2x)
 
-See the emotes flying through many twitch chats all on one page!
+See your favorite BetterTTV/7tv emotes flying through many twitch chats all on one page.
 
-## Todos
-* Let users create a custom page by giving them an input box to type in streamers.
-* Let users login/authenticate to generate a page using their followed streamers.
+Authenticate with twitch to see your followed streamers.
+
+Built with [Svelte](https://svelte.dev/)
+
+Deployed with [Vercel](https://vercel.com/)
+
+#### This is a hobby project that is in no way affiliated with Twitch.

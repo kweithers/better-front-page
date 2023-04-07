@@ -1,10 +1,12 @@
+import { APP_ACCESS_TOKEN } from '$env/static/private'
+
 async function getStreamers(n, id) {
   const url = 'https://api.twitch.tv/helix/streams?first=' + n + '&game_id=' + id;
 
   const response = await fetch(url, {
     method: 'GET',
     headers: {
-      'Authorization': ' Bearer o7swquln6lilbzbl42tm4nnp7f223k',
+      Authorization: " Bearer " + APP_ACCESS_TOKEN,
       'Client-Id': 'inzsbvgt26ismaczn8ndeq8lq6gueh',
     }
   });
@@ -27,7 +29,7 @@ async function getStreamersAllCategories(n) {
   const response = await fetch(url, {
     method: 'GET',
     headers: {
-      'Authorization': ' Bearer o7swquln6lilbzbl42tm4nnp7f223k',
+      Authorization: " Bearer " + APP_ACCESS_TOKEN,
       'Client-Id': 'inzsbvgt26ismaczn8ndeq8lq6gueh',
     }
   });
@@ -49,7 +51,7 @@ async function getImageURL(id) {
   const response = await fetch(url, {
     method: "GET",
     headers: {
-      Authorization: " Bearer o7swquln6lilbzbl42tm4nnp7f223k",
+      Authorization: " Bearer " + APP_ACCESS_TOKEN,
       "Client-Id": "inzsbvgt26ismaczn8ndeq8lq6gueh",
     },
   });
