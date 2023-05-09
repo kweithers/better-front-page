@@ -10,17 +10,9 @@
 
 <div class="head-head">
     <div class="head-row">
-        <a on:click={() => (current = "")} href="/" class="title">KEKW.pro</a>
-        <a
-            href="https://www.youtube.com/watch?v=WDiB4rtp1qw"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img
-                src="https://cdn.betterttv.net/emote/5e9c6c187e090362f8b0b9e8/2x"
-                alt="risitas"
-            /></a
-        >
-
+        <a on:click={() => (current = "")} href="/"  class="title">Better Front Page</a>
+    </div>
+    <div class="head-row">
         {#each data.sections as section}
             <a
                 class:selected={current === section.slug}
@@ -30,16 +22,18 @@
             >
         {/each}
     </div>
-    <div class="head-login">
+    <div class="head-row">
         {#if data.pathname == "custom"}
-        <p class="menu-item" id="custom">Thank you for authenticating. Enjoy!</p>
+            <p class="menu-item" id="custom">
+                Thank you for authenticating. Enjoy!
+            </p>
         {:else}
-        <a
-            class="menu-item"
-            id="login"
-            href="https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=inzsbvgt26ismaczn8ndeq8lq6gueh&redirect_uri=https://kekw-pro.vercel.app/custom&scope=user%3Aread%3Afollows"
-            >Authenticate with Twitch to see your followed streamers</a
-        >
+            <a
+                class="menu-item"
+                id="login"
+                href="https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=inzsbvgt26ismaczn8ndeq8lq6gueh&redirect_uri=https://better-front-page.vercel.app/custom&scope=user%3Aread%3Afollows"
+                >Authenticate with Twitch to see your followed streamers</a
+            >
         {/if}
     </div>
 </div>
