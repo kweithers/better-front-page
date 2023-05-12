@@ -45,7 +45,7 @@
 </script>
 
 <body>
-  {#each data.streams as { user_name, url, viewer_count }}
-    <Row {user_name} image_url={url} {viewer_count} />
+  {#each data.streams as { user_name, url, viewer_count, language, uptime }}
+    <Row {user_name} image_url={url} {viewer_count} {language} {uptime} />
   {/each}
 </body>

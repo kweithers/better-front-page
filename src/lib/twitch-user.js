@@ -27,10 +27,15 @@ async function getStreamersForUser(access_token) {
   const streamers = json.data.map(element => element.user_id);
   const names = json.data.map(element => element.user_login);
   const viewers = json.data.map(element => element.viewer_count);
+  const language = json.data.map(element => element.language);
+  const uptime = json.data.map(element => Date.parse(element.started_at));
 
   let returns = [];
   for (let i = 0; i < streamers.length; i++) {
-    returns.push({ user_id: streamers[i], user_name: names[i], viewer_count: viewers[i] })
+    returns.push({
+      user_id: streamers[i], user_name: names[i], viewer_count: viewers[i]
+      , language: language[i], uptime: uptime[i]
+    })
   }
 
   return returns
@@ -55,17 +60,24 @@ export async function getStreamsForUser(access_token) {
   let user_ids = []
   let user_names = []
   let viewers = []
+  let languages = []
+  let uptimes = []
   for (let i = 0; i < streamers.length; i++) {
     user_ids.push(streamers[i].user_id);
     user_names.push(streamers[i].user_name);
     viewers.push(streamers[i].viewer_count);
+    languages.push(streamers[i].language);
+    uptimes.push(streamers[i].uptime);
   }
 
   let urls = await Promise.all(user_ids.map(function (x) { return getImageURL(x, access_token); }));
 
   let streams = [];
   for (let i = 0; i < streamers.length; i++) {
-    streams.push({ user_id: user_ids[i], user_name: user_names[i], url: urls[i], viewer_count: viewers[i] })
+    streams.push({
+      user_id: user_ids[i], user_name: user_names[i], url: urls[i], viewer_count: viewers[i],
+      language: languages[i], uptime: uptimes[i]
+    })
   }
   return streams
 }

@@ -1,7 +1,30 @@
 <script>
+  import Flag from "./Flag.svelte";
+
   export let image_url;
   export let user_name;
   export let viewer_count;
+  export let language;
+  export let uptime;
+
+  function milliToHHMMSS(duration) {
+    var seconds = parseInt((duration / 1000) % 60),
+      minutes = parseInt((duration / (1000 * 60)) % 60),
+      hours = parseInt(duration / (1000 * 60 * 60));
+
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    return hours + ":" + minutes + ":" + seconds;
+  }
+
+  var tick = milliToHHMMSS(Date.now() - uptime);
+  $: {
+    setInterval(() => {
+      tick = milliToHHMMSS(Date.now() - uptime);
+    }, 1000);
+  }
 </script>
 
 <div class="row" id="row-{user_name}">
@@ -16,6 +39,10 @@
         alt="red button"
       />
       {viewer_count}
+    </div>
+    <div>
+      <Flag {language} />
+      {tick}
     </div>
   </div>
   <a
