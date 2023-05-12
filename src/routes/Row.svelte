@@ -6,6 +6,7 @@
   export let viewer_count;
   export let language;
   export let uptime;
+  export let title;
 
   function milliToHHMMSS(duration) {
     var seconds = parseInt((duration / 1000) % 60),
@@ -28,7 +29,7 @@
 </script>
 
 <div class="row" id="row-{user_name}">
-  <div class="streamer-card">
+  <div title= {title} class="streamer-card">
     <div>
       {user_name}
     </div>
@@ -51,7 +52,7 @@
     rel="noopener noreferrer"
   >
     <img
-      title={user_name}
+      title={title}
       src={image_url}
       alt="{user_name}'s profile picture"
     />
