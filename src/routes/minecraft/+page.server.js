@@ -1,9 +1,0 @@
-import { getStreams } from "$lib/server/twitch.js"
-import { createEmoteUrlMap } from "$lib/emote-url-map.js";
-
-/** @type {import('./$types').PageServerLoad} */
-export async function load() {
-  let streams = await getStreams(12, 27471);
-  let emoteUrlMap = createEmoteUrlMap();
-  return { streams, emoteUrlMap }
-}

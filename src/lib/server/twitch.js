@@ -1,5 +1,20 @@
 import { APP_ACCESS_TOKEN } from '$env/static/private'
 
+export const categoryNumberMap = new Map([
+  ["chess", 743],
+  ["cod", 512710],
+  ["dota2", 29595],
+  ["fifa", 2011938005],
+  ["fortnite", 33214],
+  ["gtav", 32982],
+  ["justchatting", 509658],
+  ["league", 21779],
+  ["minecraft", 27471],
+  ["rocketleague", 30921],
+  ["valorant", 516575],
+  ["wow", 18122],
+]);
+
 async function getStreamers(n, id) {
   const url = 'https://api.twitch.tv/helix/streams?first=' + n + '&game_id=' + id;
 
