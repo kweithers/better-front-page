@@ -1,4 +1,4 @@
-# KEKW.pro ![](https://cdn.betterttv.net/emote/5e9c6c187e090362f8b0b9e8/2x)
+# Better Front Page
 
 See your favorite BetterTTV/7tv emotes flying through many twitch chats all on one page.
 
