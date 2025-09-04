@@ -10,7 +10,9 @@
 
 <div class="head-head">
     <div class="head-row">
-        <a on:click={() => (current = "")} href="/"  class="title">Better Front Page</a>
+        <a on:click={() => (current = "")} href="/" class="title"
+            >Better Front Page</a
+        >
     </div>
     <div class="head-row">
         {#each data.sections as section}
