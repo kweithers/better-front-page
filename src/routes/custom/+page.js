@@ -8,6 +8,6 @@ export async function load() {
   let access_token = window.location.hash.split("&")[0].split("=")[1];
 
   let emoteUrlMap = createEmoteUrlMap();
-  let streams = getStreamsForUser(access_token);
+  let streams = await getStreamsForUser(access_token);
   return { streams, emoteUrlMap }
 }
