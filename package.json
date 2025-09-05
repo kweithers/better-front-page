@@ -5,7 +5,8 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"postinstall": "patch-package"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-vercel": "^5.0.0",
@@ -16,7 +17,10 @@
 	"type": "module",
 	"dependencies": {
 		"@vercel/analytics": "^1.0.0",
+		"bufferutil": "^4.0.9",
 		"clsx": "^2.1.1",
-		"tmi.js": "^1.8.5"
+		"encoding": "^0.1.13",
+		"tmi.js": "^1.8.5",
+		"utf-8-validate": "^6.0.5"
 	}
 }
